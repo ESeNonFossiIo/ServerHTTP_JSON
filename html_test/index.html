@@ -8,17 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap.min.css">
 
-    <title>Hello, world!</title>
+    <title>JSON Tester</title>
   </head>
   <body>
 	<div class="container">
-		<h1>Hello, world!</h1>
+		<h1>JSON Tester</h1>
 		<div class="form-group">
 			<label for="url">JSON Server URL:</label>
-			<input type="text" class="form-control" id="url" placeholder="Enter url" value="http://127.0.0.1/">
+			<input type="text" class="form-control" id="url" placeholder="Enter url" value="http://127.0.0.1:8008/">
 		</div>
 		<button type="button" class="btn btn-primary" onclick="start();">Esegui richiesta</button>
-		<pre><code #id="output"></code></pre>
+		<div class="form-group">
+			<label>Risposta:</label>
+			<pre style="min-height: 250px;" class="border" id="output"></pre>
+		</div>
 	</div>
 
     <!-- Optional JavaScript -->
