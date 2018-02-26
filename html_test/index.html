@@ -29,12 +29,12 @@
     <script src="jquery-3.3.1.min.js"></script>
     <script src="popper.min.js"></script>
     <script src="bootstrap.min.js"></script>
-	
+
 <script>
 function start() {
 	var url = $('#url').val();
 	$.getJSON(url, function(data) {
-		$('#output').html(data.toString());
+		$('#output').append(JSON.stringify(data)+"<BR>");
 	})
 	.fail(function() {
 		alert( "error" );
